@@ -1,0 +1,61 @@
+@charset "utf-8";
+button {
+  /* ブラウザ特有のスタイルを無効に */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* 整える */
+  margin: 1em 0; /* 前後の隙間 */
+  padding: 0.6em 1em; /* 塗りの余白 */
+  font-size: 1em; /* フォントサイズ */
+  background-color: #1aa1ff; /* 背景色 */
+  color: #FFF; /* テキストカラー */
+  cursor: pointer; /* カーソルを指マークに */
+  border-radius: 3px; /* 角の丸み */
+  border: 0; /* 枠線を消す */
+  transition: 0.3s; /* ホバーの変化を滑らかに */
+
+}
+
+div {
+  text-align: center; /*中央配置*/
+  margin: 40px 0;
+}
+
+.div-top {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* ホバー時（カーソルをのせた時）の見た目 */
+button:hover {
+  background-color: #064fda; /* 背景色 */
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label{
+  display: block; /* ブロックレベル要素化する */
+  float: left; /* 要素の左寄せ・回り込を指定する */
+  margin: 5px; /* ボックス外側の余白を指定する */
+  width: 100px; /* ボックスの横幅を指定する */
+  height: 45px; /* ボックスの高さを指定する */
+  padding-left: 5px; /* ボックス内左側の余白を指定する */
+  padding-right: 5px; /* ボックス内御右側の余白を指定する */
+  color: #006DD9; /* フォントの色を指定 */
+  text-align: center; /* テキストのセンタリングを指定する */
+  line-height: 45px; /* 行の高さを指定する */
+  cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+  border: 2px solid #006DD9;/* ボックスの境界線を実線で指定する */
+  border-radius: 5px; /* 角丸を指定する */
+}
+input[type="radio"]:checked + label {
+  background: #006DD9;
+  color: #FFF;
+}
+label:hover {
+  background-color: #E2EDF9;
+}
